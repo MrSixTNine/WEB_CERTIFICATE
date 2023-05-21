@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="full-cer" id="fullImgBox">
+        <img src="pic/UC-421cf874-1f90-4785-b7b4-d9e2d6cf36bb.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <h5 class="UpdateCer">Certificate Now: 11</h5>
+    <div class="container">
+        <div class="sign">My Certificate</div>
+    </div>
+    <h1 class="CerTag">Python Certificate</h1>
+    <section class="img-certificate">
+        <img src="pic/certificate_PY.jpg" onclick="openFullImg(this.src)">
+        <img src="pic/certificate_PY2.jpeg" onclick="openFullImg(this.src)">
+    </section>
+    <h1 class="CerTag">SQL Certificate</h1>
+    <section class="img-certificate">
+        <img src="pic/certificate_SQL.jpg" onclick="openFullImg(this.src)">
+        <img src="pic/certificate_SQL2.jpg" onclick="openFullImg(this.src)">
+        <img src="pic/certificate_SQL3.jpg" onclick="openFullImg(this.src)">
+    </section>
+    <h1 class="CerTag">Data Certificate</h1>
+    <section class="img-certificate">
+        <img src="pic/certificate_DATA.jpg" onclick="openFullImg(this.src)">
+        <img src="pic/certificate_DATA2.jpg" onclick="openFullImg(this.src)">
+        <img src="pic/certificate_DATA3.jpg" onclick="openFullImg(this.src)">
+    </section>
+    <h1 class="CerTag">R Certificate</h1>
+    <section class="img-certificate">
+        <img src="pic/certificate_R.jpg" onclick="openFullImg(this.src)">
+        <img src="pic/certificate_R2.jpg" onclick="openFullImg(this.src)">
+        <img src="pic/certificate_R3.jpg" onclick="openFullImg(this.src)">
+    </section>
+    
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex"
+        fullImg.src = pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
